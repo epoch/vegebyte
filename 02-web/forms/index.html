@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="form.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    
+    <h1>HTML5 FORMS</h1>
+
+    <form action="/destination">
+
+      
+      <p>
+        <label for="query">Things to search for</label>
+        <input type="search" id="query" placeholder="hotdog">
+      </p>
+
+      <p>
+        <label for="name">name</label>
+        <input type="text" id="name" placeholder="vegebyte">
+      </p>
+
+      <p>
+        <label for="age">age</label>
+        <input type="number" id="age" placeholder="62" pattern="[0-9]">
+      </p>
+
+      <p>
+        <label for="myspace_page">myspace page</label>
+        <input type="url" id="myspace_page">
+      </p>
+
+      <p>
+        <label for="email">email address</label>
+        <input type="email" id="email">        
+      </p>
+
+      <p>
+        <label for="avator">Avator</label>
+        <input type="file" id="avator">
+      </p>
+
+      <p>
+        <label for="letter">letter to home</label>
+        <textarea id="letter" placeholder="dear mom and dad"></textarea>
+      </p>
+
+      <p>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob">
+      </p>
+
+      <p>
+        select your vices:
+        <label for="cigars">Cigars</label>
+        <input type="checkbox" id="cigars" value="cigars">
+        <label for="bourbon">Bourbon</label>
+        <input type="checkbox" id="bourbon" value="bourbon">
+        <label for="heroin">Heroin</label>
+        <input type="checkbox" id="heroin" value="heroin">
+      </p>
+
+      <p>
+        select your favourite vice:
+        <label for="fav-vice">favourite vice</label>
+        <select name="fav-vice" id="fav-vice">
+          <option value="cigars">Cigars</option>
+          <option value="bourbon">Bourbon</option>
+          <option value="heroin">Heroin</option>
+        </select>
+      </p>
+
+
+      <button id="push-it" value="hello">push it good</button>
+
+    </form>
+
+  </div>
+</body>
+</html>

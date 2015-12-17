@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: block;
+  height: 20px;
+  background-color: mistyrose;
+  border-bottom: 1px solid pink;
+}
+
+.span-1, .span-2, .span-3 {
+  /*min-height: 100px;*/
+  /*margin-right: 3.333333%;  /* 10 / 300 ; */
+  float: left;
+  width: 100%; /*96.666666%; */
+}
+
+.span-1 {
+  background-color: pink;
+  /*width: 30%;  90 / 300  */
+}
+
+.span-2 {
+  background-color: plum;
+  /*width: 63.333333%;  190px ;*/
+}
+
+.span-3 {
+  background-color: linen;
+  /*width: 96.666666%;  290px; */
+}
+
+img {
+  float: right;
+  max-width: 100%; /* images to respond */
+}
+
+@media all and (min-width: 20em) {
+  .span-1, .span-2, .span-3 {
+    margin-right: 3.333333%;
+  }
+
+  .span-1 {
+    width: 30%;
+  }
+
+  .span-2 {
+    width: 63.333333%;
+  }
+
+  .span-3 {
+    width: 96.666666%;  290px;    
+  }
+
+  nav li {
+    float: left;
+    padding-right: 1em;
+    border-bottom: 0;
+  }  
+}
+
+@media all and (min-width: 60em) {
+  body {
+    background-color: yellow;
+  }
+}

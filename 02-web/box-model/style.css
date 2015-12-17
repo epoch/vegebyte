@@ -1,0 +1,39 @@
+.box {
+  height: 50px;
+}
+
+.box-a {
+  background-color: plum;
+  display: inline; /* default for a div element */
+}
+
+.box-b {
+  background-color: tomato;
+  padding: 10px;
+}
+
+.box-c {
+  background-color: pink;
+}
+
+/* css tricks */
+
+.hide {
+  display: none;
+  /*visibility: hidden;*/
+}
+
+.show-inline {
+  display: inline;
+  width: 200px;
+}
+
+.show-block {
+  display: block;
+}
+
+.show-inline-block {
+  display: inline-block;
+  width: 200px;
+}
+

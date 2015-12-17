@@ -1,0 +1,26 @@
+/*.double-a {
+  font-size: 2em;
+}
+
+.triple-a {
+  font-size: 2em;
+}*/
+
+/*.container > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+} */
+
+.double-a {
+  background-color: yellow;
+  float: left;
+  width: 20%;
+}
+
+.box-b {
+  float: left;
+  background-color: pink;
+  width: 80%;
+}
+

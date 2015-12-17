@@ -1,0 +1,45 @@
+/*target every element*/
+* {
+
+}
+
+/*searching by tag*/
+
+h1 {
+  background-color: tomato; 
+}
+
+/*searchig by id*/
+
+#main-title {
+  color: white;
+}
+
+/*searching by classes*/
+
+.number2 {
+  background-color: plum;
+  font-size: 30px;
+}
+
+.very-important {
+  color: linen;
+}
+
+/*within my-list search for all li*/
+.my-list li {
+  text-decoration: underline;
+}
+
+/*direct child*/
+main > p {
+  background-color: pink;
+}
+
+/*pseudo selector*/
+h3:hover {
+  background-color: purple;
+}
+
+
+

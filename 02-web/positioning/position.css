@@ -1,0 +1,33 @@
+.box {
+  width: 200px;
+  height: 100px;
+  border: 1px solid blue;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.position-static {
+  position: static;
+  /*top bottom left right will be ignored*/
+}
+
+.position-fixed {
+  position: fixed;
+  background-color: red;
+  top: 0;
+  right: 0;
+}
+
+.position-relative {
+  position: relative;
+  left: 40px;
+}
+
+/* used by itself relative to viewport */
+.position-absolute {
+  position: absolute;
+  background-color: pink;
+  top: 10px;
+  left: 10px;
+}

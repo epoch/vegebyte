@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      border: 1px solid black;
+      background-color: linen;
+    }
+
+    nav li {
+      display: inline-block;
+    }
+
+    ul {
+      padding: 0;
+      /*width: 400px;*/
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .container {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .box-model {
+      width: 400px;
+      background-color: yellow;
+      padding-left: 10px;
+      padding-right: 12px;
+      border: 1px solid black;
+    }
+
+    .image-container div {
+      background-color: plum;
+      display: inline-block;
+      width: 25%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="">home</a></li>
+        <li><a href="about_me.html">about me</a></li>
+        <li><a href="">portfolio</a></li>      
+      </ul>
+    </nav>
+
+    <h1 style="color: red; text-align: center;">about me</h1>
+
+    <div>45 collins st</div>
+    <div>dt@ga.co</div>
+
+    <article class="box-model">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio error assumenda inventore officia provident aliquam magni, sed enim dignissimos totam voluptate culpa ea sit exercitationem placeat, modi illo impedit delectus.</p>
+    </article>
+
+    <article>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ducimus vero dolore. Obcaecati aperiam illum omnis illo sequi earum sed ab officiis doloribus expedita, velit dolorem quidem quae, veniam neque.</p>
+    </article>
+
+    <div class="image-container"><div>a</div><div>b</div><div>c</div><div>d</div></div>
+
+  </div>
+  
+</body>
+</html>
