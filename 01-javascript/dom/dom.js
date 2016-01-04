@@ -11,3 +11,12 @@ var task = function() {
 }
 
 winButton.addEventListener('click', task);
+
+var inputBox = document.getElementById('input-box');
+var whatButton = document.getElementById('what-button');
+
+var sayWhat = function() {
+  console.log(inputBox.value);
+}
+
+whatButton.addEventListener('click', sayWhat);
