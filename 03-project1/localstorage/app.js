@@ -15,8 +15,6 @@ var app = {
       console.log('this', this);
       // event.target
       console.log('event target', event.target);
-
-      $(this).remove();
     });
 
     app.elems.$add.on('click', function() {
