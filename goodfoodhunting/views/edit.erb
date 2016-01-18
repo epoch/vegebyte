@@ -1,0 +1,14 @@
+<form action="/dishes/<%= @dish['id'] %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <p>
+    <label for="">name</label>
+    <input type="text" name="name" value="<%= @dish['name'] %>">
+  </p>
+
+  <p>
+    <label for="">image url</label>
+    <input type="text" name="image_url" value="<%= @dish['image_url'] %>">
+  </p>
+
+  <button>win</button>
+</form>
