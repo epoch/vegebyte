@@ -1,0 +1,18 @@
+<ul>
+  <li><a href="/">all</a></li>
+  <% @dish_types.each do |dish_type| %>
+    <li><a href="/?dish_type_id=<%= dish_type.id %>"><%= dish_type.name %></a></li>
+  <% end %>
+</ul>
+
+<h1>good food hunting</h1>
+
+<% @dishes.each do |dish| %>
+  <p>
+    <a href="/dishes/<%= dish.id %>">
+      <%= dish.name %>
+    </a>
+  </p>
+  <p><%= dish.dish_type.name if dish.dish_type %></p>
+  <img src="<%= dish.image_url %>" alt="">
+<% end %>
