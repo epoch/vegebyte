@@ -6,6 +6,17 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
+  <% if logged_in? %>
+  <form action="/session" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button>logout</button>
+  </form>
+  log in as <%= current_user.email %>
+  <% end %>
+
+  <%= erb :banner %>  
+
+  <a href="/dishes/new">new dish</a>
 
   <%= yield %>
 

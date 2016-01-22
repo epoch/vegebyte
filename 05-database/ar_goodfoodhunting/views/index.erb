@@ -5,14 +5,24 @@
   <% end %>
 </ul>
 
-<h1>good food hunting</h1>
-
 <% @dishes.each do |dish| %>
-  <p>
+
+  <div class="card">
+    <div><img src="<%= dish.image_url %>" alt=""></div>
     <a href="/dishes/<%= dish.id %>">
       <%= dish.name %>
     </a>
-  </p>
-  <p><%= dish.dish_type.name if dish.dish_type %></p>
-  <img src="<%= dish.image_url %>" alt="">
+    <p><%= dish.dish_type.name if dish.dish_type %></p>
+    <p><%= dish.likes.count %></p>
+    <form action="/likes" method="post">
+      <input type="hidden" name="dish_id" value="<%= dish.id %>">
+      <button>like</button>
+    </form>
+    <form action="/likes" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <input type="hidden" name="dish_id" value="<%= dish.id %>">
+      <button>unlike</button>
+    </form>
+  </div>
+
 <% end %>
