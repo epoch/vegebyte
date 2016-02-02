@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Admin::UsersController < ApplicationController
 
   def index
     @users = User.all
@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.new
     @user.email = params[:email]
     @user.save
-    redirect_to '/users'
+    redirect_to '/admin/users'
   end
 
   def show

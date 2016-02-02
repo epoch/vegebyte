@@ -12,8 +12,8 @@
   <nav class="main-nav">
     <ul>
       <li><%= link_to 'dashboard', admin_root_path %></li>
-      <li><a href="/dishes">dishes</a></li>
-      <li><%= link_to 'users', '/users' %></li>
+      <li><a href="/admin/dishes">dishes</a></li>
+      <li><%= link_to 'users', admin_users_path %></li>
     </ul>
   </nav><main class="content">
     <%= yield %>

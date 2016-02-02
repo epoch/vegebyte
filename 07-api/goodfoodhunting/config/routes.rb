@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # get '/dishes/:id/edit' => 'dishes#edit'
   # patch '/dishes/:id' => 'dishes#update'
   # delete '/dishes/:id' => 'dishes#destroy'
+  resources :dishes
 
   namespace :admin do
     resources :dishes
@@ -19,5 +20,8 @@ Rails.application.routes.draw do
     root 'dashboard#index'
   end
 
-  resources :dishes
+  namespace :api do
+    resources :dishes
+  end
+
 end
