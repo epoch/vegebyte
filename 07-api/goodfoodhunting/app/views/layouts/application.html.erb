@@ -8,7 +8,19 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <nav class="main-nav">
+    <ul>
+      <li><%= link_to 'dashboard', admin_root_path %></li>
+      <li><a href="/dishes">dishes</a></li>
+      <li><%= link_to 'users', '/users' %></li>
+    </ul>
+  </nav><main class="content">
+    <%= yield %>
+  </main>
+
+</div>
+
 
 </body>
 </html>

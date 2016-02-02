@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+nav {
+  background-color: pink;
+  width: 30%;
+}
+
+nav li {
+  list-style: none;
+  margin-bottom: 5px;
+  background-color: plum;
+  padding: 4px;
+}
+
+main {
+  background-color: linen;
+  width: 70%;
+}
+
+.content {
+  padding: 1em;
+}
+
+.row {
+  padding: 0.5em 0;
+  margin-bottom: 0.5em;
+  background-color: pink;
+}
