@@ -1,0 +1,9 @@
+<h2>Likes</h2>
+
+<% @likes.each do |like| %>
+
+  <div class="row">
+    <%= like.dish.name %>
+  </div>
+
+<% end %>

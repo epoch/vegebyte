@@ -28,6 +28,7 @@ class Admin::DishesController < ApplicationController
   def update
     @dish = Dish.find(params[:id])
     @dish.name = params[:dish][:name]
+    @dish.image_url = params[:dish][:image_url]
     @dish.save
     redirect_to '/admin/dishes'
   end

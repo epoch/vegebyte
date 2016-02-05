@@ -14,14 +14,22 @@ ul {
   padding: 0;
 }
 
-.container > * {
+/*.container > * {
   display: inline-block;
   vertical-align: top;
+}*/
+
+.container {
+  display: flex;
+  flex-direction: row;
 }
 
 nav {
   background-color: pink;
   width: 30%;
+  min-height: 100vh;
+  order: 1;
+  flex: 1;
 }
 
 nav li {
@@ -33,7 +41,7 @@ nav li {
 
 main {
   background-color: linen;
-  width: 70%;
+  flex: 2;
 }
 
 .content {
@@ -44,4 +52,13 @@ main {
   padding: 0.5em 0;
   margin-bottom: 0.5em;
   background-color: pink;
+}
+
+
+.active {
+  background-color: yellow;
+}
+
+label {
+  display: block;
 }

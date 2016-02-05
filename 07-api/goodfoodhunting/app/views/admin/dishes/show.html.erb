@@ -6,3 +6,9 @@
   <button>delete</button>
 
 </form>
+
+<% @dish.likes.each do |like| %>
+
+  <div class="row"><%= like.id %></div>
+
+<% end %>

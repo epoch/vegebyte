@@ -7,13 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <div class="container">
   <nav class="main-nav">
     <ul>
-      <li><%= link_to 'dashboard', admin_root_path %></li>
-      <li><a href="/admin/dishes">dishes</a></li>
-      <li><%= link_to 'users', admin_users_path %></li>
+      <li class="<%= 'active' if controller.controller_name == 'dashboard' %>"><%= link_to 'dashboard', admin_root_path %></li>
+      <li class="<%= 'active' if controller.controller_name == 'dishes' %>"><%= link_to 'dishes', admin_dishes_path %></li>
+      <li class="<%= 'active' if controller.controller_name == 'users' %>"><%= link_to 'users', admin_users_path %></li>
+      <li><%= link_to 'likes', admin_likes_path %></li>
     </ul>
   </nav><main class="content">
     <%= yield %>

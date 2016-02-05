@@ -1,7 +1,13 @@
 <form action="/admin/users" method="post">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <label for="">email</label>
-  <input type="text" name="email">
+  <input type="text" name="user[email]">
   <button>go</button>
 
 </form>
+
+<%#= form_for [:admin, @user] do |f| %>
+  <%#= f.label :email %>
+  <%#= f.text_field :email %>
+  <!--button>go</button-->
+<%# end %>

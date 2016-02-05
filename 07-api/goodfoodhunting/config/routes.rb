@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :dishes
     resources :users
-
+    resources :likes
+    
     get '/dashboard' => 'dashboard#index'
 
     # get '/' => 'dishes#index'
@@ -21,7 +22,11 @@ Rails.application.routes.draw do
   end
 
   namespace :api do
-    resources :dishes
+    resources :dishes do
+      resources :likes, only: [:create]
+    end
   end
+
+  # post '/api/dishes/:id/likes' => 'api::likes#create'
 
 end

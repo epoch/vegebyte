@@ -1,0 +1,77 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ui-card {
+  /*float: left;*/
+  width: 24%;
+  margin: 0.5%;
+  background-color: mistyrose;
+}
+
+.ui-card header {
+  line-height: 2em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  /*justify-content: center;  */
+}
+
+.flex > * {
+  flex: 1;
+}
+
+.avatar {
+  width: 2em;
+  height: 2em;
+  border-radius: 2em;
+  display: block;
+  /*vertical-align: middle;*/
+}
+
+
+.image {
+  position: relative;
+}
+
+
+.like {
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 3em;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  /*display: none;*/
+  opacity: 0;
+}
+
+.like:hover {
+  color: yellow;
+}
+
+.image:hover .like {
+  /*display: block;*/
+  opacity: 1;
+}
+
+.content {
+  padding: 1em;
+}
+
+.right {
+  float: right;
+}
+
+.more {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  background-color: linen;
+}

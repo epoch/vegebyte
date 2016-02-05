@@ -3,7 +3,7 @@
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
   <label for="">email</label>
-  <input type="text" name="email" value="<%= @user.email %>">
+  <input type="text" name="user[email]" value="<%= @user.email %>">
   <button>go</button>
 
 </form>
