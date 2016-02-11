@@ -1,0 +1,32 @@
+<h1><%= @dish.name %></h1>
+
+feedback
+
+<%= form_for Comment.new do |f| %>
+  <%= f.hidden_field :dish_id, value: @dish.id %>
+  <%= f.label :comment %>
+  <%= f.text_area :body %>
+  <button>add comment</button>
+<% end %>
+
+<div id="comments">
+<% @comments.each do |comment| %>
+  <p><%= comment.body %></p>
+<% end %>
+</div>
+
+<script>
+  $('#new_comment').on('submit', function(event) {
+    event.preventDefault();
+
+    $.ajax({ 
+      url: '/comments', 
+      method: 'post',
+      data: { comment: { body: 'xxx', dish_id: <%= @dish.id %> }} 
+    }).done(function(data) {
+      $('#comments').append('<p>'+data.body+'</p>')
+    })
+
+  })
+
+</script>
